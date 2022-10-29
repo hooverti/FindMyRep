@@ -6,12 +6,13 @@ body {
   form {
     background-color: #fff;
     border-color: #000;
+    border-width: 0.5pt;
     width: 500px;
     height: 44px;
     border-radius: 5px;
     display:flex;
     flex-direction:row;
-    vertical-align: middle;
+    justify-content: center;
     align-items:center;
   }
   
@@ -47,5 +48,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 11pt;
     color: #000;
-    vertical-align: bottom;
+    padding-top: 40pt;
+    align-items: center;
   }
