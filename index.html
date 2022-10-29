@@ -16,14 +16,13 @@
 
         <!--Scripts-->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script type="module" src="./js/index.js"></script>
-        <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH6ci-d6SMdktqJpXS4sNmpRc0_cIPigs&callback=initAutocomplete&libraries=places&v=weekly"
-      defer
-    ></script>
+        <script type="module" src="./ts/address-search.ts"></script>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN1hL3KzcLx2L-6yWGA9t4q7jUUC1qj4M&libraries=places&callback=initAutocomplete">
+</script>
     </head>
     <body>
-        <div class="form-center">
+        <div class="flex-wrapper">
             <form id="address-form" action="" method="get" autocomplete="off">
                 <!--id="ship-address"-->
                 <input id="search" name="search-bar" autocomplete="off" placeholder="Enter address..." required>
@@ -34,9 +33,7 @@
                     </svg>
                 </button>
             </form>
+            <footer>&copy 2022 Tim Hoover</footer>
         </div>
-        <footer>
-            <p>&copy; 2022 Tim Hoover</p>
-        </footer>
     </body>
 </html>
