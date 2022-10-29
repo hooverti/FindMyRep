@@ -5,8 +5,9 @@ body {
   
   form {
     background-color: #fff;
-    border-color: #000;
-    border-width: 0.5pt;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
     width: 500px;
     height: 44px;
     border-radius: 5px;
