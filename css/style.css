@@ -10,7 +10,7 @@ body {
   justify-content: flex-start;
 }
 
-input {
+form {
   background-color: #fff;
   width: 600px;
   height: 44px;
