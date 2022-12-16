@@ -1,6 +1,11 @@
 function initAutocomplete(){
     const input = document.getElementById("search");
-    const searchBox = new google.maps.places.SearchBox(input);
+    const options = {
+        componentRestrictions: { country: "us" },
+        fields: ["address_components"],
+        types: "address"
+    };
+    const searchBox = new google.maps.places.Autocomplete(input, options);
     
     searchBox.addListener("places-changed", () => {
         const places = searchBox.getPlaces();
