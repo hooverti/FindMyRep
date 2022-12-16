@@ -16,23 +16,21 @@
 
         <!--Scripts-->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script type="module" src="./ts/address-search.ts"></script>
+        <script type="module" src="./index.js"></script>
         <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN1hL3KzcLx2L-6yWGA9t4q7jUUC1qj4M&libraries=places&callback=initAutocomplete">
-</script>
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN1hL3KzcLx2L-6yWGA9t4q7jUUC1qj4M&libraries=places&callback=initAutocomplete&v=weekly"
+                defer>
+        </script>
     </head>
     <body>
         <div class="flex-wrapper">
-            <form id="address-form" action="" method="get" autocomplete="off">
-                <!--id="ship-address"-->
-                <input id="search" name="search-bar" autocomplete="off" placeholder="Enter address..." required>
-                <button>
-                    <svg viewBox="0 0 1024 1024">
-                        <path class="path1" 
-                        d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"/>
-                    </svg>
-                </button>
-            </form>
+            <input id="search" class="controls" type="text" placeholder="Enter address..." required>
+            <button>
+                <svg viewBox="0 0 1024 1024">
+                    <path class="path1" 
+                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"/>
+                </svg>
+            </button>
             <footer>&copy 2022 Tim Hoover</footer>
         </div>
     </body>
